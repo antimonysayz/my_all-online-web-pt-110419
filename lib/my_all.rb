@@ -8,6 +8,11 @@ def my_all?(collection)
   collect << yield(collection[i])
   i += 1
   end
+  if collect.include?(false)
+    false
+  else
+    true
+  end
   collect
 end
 
